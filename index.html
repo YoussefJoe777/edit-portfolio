@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>يوسف — ممنتج شطرنج</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background: linear-gradient(to bottom right, #030712, #111827, #000000);
+            color: white;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 6rem 1.5rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            background: linear-gradient(to right, #34d399, #22d3ee);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+        }
+
+        .subtitle {
+            color: #d1d5db;
+            max-width: 28rem;
+            margin: 0 auto;
+            line-height: 1.75;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: linear-gradient(to right, #22d3ee, #34d399);
+            color: #111827;
+            font-weight: 600;
+            padding: 0.5rem 1.5rem;
+            border-radius: 9999px;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        .btn-primary:hover {
+            opacity: 0.9;
+        }
+
+        .btn-secondary {
+            border: 1px solid #6b7280;
+            padding: 0.5rem 1.5rem;
+            border-radius: 9999px;
+            text-decoration: none;
+            color: white;
+            transition: background-color 0.3s;
+        }
+
+        .btn-secondary:hover {
+            background-color: #1f2937;
+        }
+
+        main {
+            max-width: 80rem;
+            margin: 0 auto;
+            padding: 0 1.5rem 6rem;
+        }
+
+        h2 {
+            font-size: 1.875rem;
+            color: #34d399;
+            font-weight: 600;
+            margin-bottom: 2.5rem;
+            text-align: center;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            position: relative;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+            display: block;
+            text-decoration: none;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 20px 25px -5px rgba(52, 211, 153, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 14rem;
+            object-fit: cover;
+            filter: brightness(0.9);
+            transition: filter 0.3s;
+        }
+
+        .card:hover img {
+            filter: brightness(1);
+        }
+
+        .card-title {
+            position: absolute;
+            bottom: 0.75rem;
+            left: 0.75rem;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 0.25rem 0.75rem;
+            border-radius: 0.5rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: white;
+        }
+
+        footer {
+            border-top: 1px solid #1f2937;
+            text-align: center;
+            color: #6b7280;
+            padding: 1.5rem;
+            font-size: 0.875rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            header {
+                padding: 4rem 1.5rem;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>يوسف — ممنتج شطرنج</h1>
+        <p class="subtitle">
+            أصنع لحظات بصرية تحكي شغف الشطرنج — مونتاج بإحساس اللاعب واحتراف الممنتج.
+        </p>
+        <div class="button-container">
+            <a href="https://drive.google.com/drive/folders/your-folder-id" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                📁 مجلد العينات
+            </a>
+            <a href="https://wa.me/20123xxxxxxx" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+                💬 تواصل معي
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <h2>🎥 عينات مختارة</h2>
+        <div class="grid">
+            <a href="https://www.youtube.com/watch?v=VIDEO_ID_1" target="_blank" rel="noopener noreferrer" class="card">
+                <img src="https://images.unsplash.com/photo-1542281286-9e0a16bb7366?auto=format&fit=crop&w=900&q=80" alt="فخ عبقري">
+                <div class="card-title">فخ عبقري 🎯</div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=VIDEO_ID_2" target="_blank" rel="noopener noreferrer" class="card">
+                <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80" alt="موقف مضحك">
+                <div class="card-title">موقف مضحك 😂</div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=VIDEO_ID_3" target="_blank" rel="noopener noreferrer" class="card">
+                <img src="https://images.unsplash.com/photo-1504805572947-34fad45aed93?auto=format&fit=crop&w=900&q=80" alt="تحليل سريع">
+                <div class="card-title">تحليل سريع ♟️</div>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        © <span id="year"></span> يوسف • ممنتج ومبرمج شطرنج ⚡
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
